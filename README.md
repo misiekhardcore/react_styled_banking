@@ -1,2 +1,3 @@
 # react_styled_banking
-https://www.youtube.com/watch?v=Nl54MJDR2p8
+
+[video](https://youtu.be/Nl54MJDR2p8?t=799)

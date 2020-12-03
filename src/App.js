@@ -1,14 +1,14 @@
-import React from 'react'
-import './App.scss'
-import Navbar from './components/Navbar'
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import "./App.scss";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
-    <>
-      <Navbar/>
-    </>
-  )
-}
+    <BrowserRouter>
+      <Navbar />
+    </BrowserRouter>
+  );
+};
 
-export default App
-
+export default App;

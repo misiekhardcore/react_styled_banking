@@ -5,7 +5,7 @@ import styled from "styled-components";
 export const Nav = styled.nav`
   background: #000;
   height: 80px;
-  /* margin-top: -80px; */
+  margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,9 +81,14 @@ export const NavLink = styled(LinkS)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  transition: color 0.2s ease-in-out;
 
   &.active {
     border-bottom: 3px solid #01bf71;
+  }
+
+  &:hover {
+    color: #01bf72;
   }
 `;
 

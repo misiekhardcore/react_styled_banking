@@ -17,7 +17,7 @@ const Navbar = (props) => {
     <Nav>
       <NavContainer>
         <NavLogo to="/">dolla</NavLogo>
-        <MobileIcon>
+        <MobileIcon onClick={props.toggle}>
           <FaBars />
         </MobileIcon>
         <NavMenu>

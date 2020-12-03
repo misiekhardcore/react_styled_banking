@@ -1,14 +1,12 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import "./App.scss";
-import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
+import Home from "./pages";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Sidebar />
-      <Navbar />
+      <Route link="/" component={Home} />
     </BrowserRouter>
   );
 };

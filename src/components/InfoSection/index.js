@@ -18,22 +18,37 @@ import {
 const InfoSection = (props) => {
   return (
     <>
-      <InfoContainer>
-        <InfoWrapper>
-          <InfoRow>
+      <InfoContainer lightBg={props.lightBg} id={props.id}>
+        <InfoWrapper imageStart={props.imageStart}>
+          <InfoRow imgStart={props.imgStart}>
             <Column1>
               <TextWrapper>
-                <TopLine>Top line</TopLine>
-                <Headline>Headline</Headline>
-                <Subtitle>Subtitle</Subtitle>
+                <TopLine>{props.topLine}</TopLine>
+                <Headline lightText={props.lightText}>
+                  {props.headline}
+                </Headline>
+                <Subtitle darkText={props.darkText}>
+                  {props.description}
+                </Subtitle>
                 <InfoBtn>
-                  <Button to="home">Button</Button>
+                  <Button
+                    smooth={"true"}
+                    duration={300}
+                    spy={true}
+                    exact={"true"}
+                    offset={-80}
+                    to="home"
+                    primary={props.primary ? 1 : 0}
+                    dark={props.dark ? 1 : 0}
+                  >
+                    {props.buttonLabel}
+                  </Button>
                 </InfoBtn>
               </TextWrapper>
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img />
+                <Img src={props.img.default} alt={props.alt} />
               </ImgWrap>
             </Column2>
           </InfoRow>

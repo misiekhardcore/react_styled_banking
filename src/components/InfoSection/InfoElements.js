@@ -22,6 +22,7 @@ export const InfoWrapper = styled.div`
 
 export const InfoRow = styled.div`
   display: grid;
+  gap: 3rem;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
   grid-template-areas: ${({ imgStart }) =>
@@ -92,7 +93,7 @@ export const ImgWrap = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 100%auto;
+  width: 100%;
   margin: 0 0 0.8rem 0;
   padding-right: 0;
 `;

@@ -45,16 +45,52 @@ const Navbar = (props) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLink to="about">About</NavLink>
+              <NavLink
+                to="about"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                About
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="discover">Discover</NavLink>
+              <NavLink
+                to="discover"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                Discover
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="services">Services</NavLink>
+              <NavLink
+                to="services"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                Services
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="signup">Sign Up</NavLink>
+              <NavLink
+                to="signup"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                Sign Up
+              </NavLink>
             </NavItem>
           </NavMenu>
           <NavBtn>
